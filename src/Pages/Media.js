@@ -1,13 +1,15 @@
-import React, { Component } from "react";
+import React, { Component } from "react"
 import Carousel from "../components/Carousel"
+import Content from "../components/Content"
 
 class Media extends Component {
   render() {
-    return <div className="slideshow-container">
-        <Carousel/>
-        
-    </div>;
+    return (
+      <Content>
+        <Carousel />
+      </Content>
+    )
   }
 }
 
-export default Media;
+export default Media

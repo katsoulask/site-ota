@@ -1,18 +1,10 @@
-import React from "react";
+import React from "react"
 //import arrowNext from '../images/arrow-right.svg';
 //import arrowLeft from '../images/arrow-left.svg';
 
-const a = 3
-const b = 4
-
-const c = {
-    a,
-    b
-}
-
 export default class Carousel extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props)
     this.state = {
       currentImageIndex: 0,
 
@@ -26,15 +18,15 @@ export default class Carousel extends React.Component {
         "https://via.placeholder.com/200x150?text=seventh",
         "https://via.placeholder.com/200x150?text=eighth",
         "https://via.placeholder.com/200x150?text=ninth",
-        "https://via.placeholder.com/200x150?text=tenth",
-      ],
+        "https://via.placeholder.com/200x150?text=tenth"
+      ]
       // imported images of right and left arrows
-     // arrowNext,
+      // arrowNext,
       //: arrowLeft
-    };
+    }
   }
 
   render() {
-    return null;
+    return null
   }
 }

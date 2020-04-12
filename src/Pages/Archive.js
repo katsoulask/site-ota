@@ -1,11 +1,10 @@
-import React, { Component } from "react";
+import React, { Component } from "react"
+import Content from "../components/Content"
 
 class Archive extends Component {
-    render() {
-        return (
-            <div>Archive</div>
-        )
-    }
+  render() {
+    return <Content>Archive</Content>
+  }
 }
 
-export default Archive;
+export default Archive
