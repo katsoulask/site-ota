@@ -28,7 +28,7 @@ body, div, ul, li, button, a, p, h1, h2, h3, h4, h5, h6, li {
     flex: 1;
     display: flex;
     flex-direction: column;
-    max-width: 65%;
+    width: 100%;
     padding: 16px;
     margin: 0 auto;
     overflow: scroll;
@@ -59,8 +59,8 @@ body, div, ul, li, button, a, p, h1, h2, h3, h4, h5, h6, li {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: black;
-    color: white;
+    background-color: #bbb2b2;
+    color: black;
 }
 
 .navBar {
@@ -68,7 +68,7 @@ body, div, ul, li, button, a, p, h1, h2, h3, h4, h5, h6, li {
     width: 100%;
     align-items: center;
     justify-content: center;
-    background-color: #161616;
+    background-color: #bbb2b2;
     padding: 16px;
 }
 
@@ -89,7 +89,7 @@ body, div, ul, li, button, a, p, h1, h2, h3, h4, h5, h6, li {
     font-style: italic;
     text-decoration: none;
     padding: 0 10px;
-    color: whitesmoke;
+    color: black;
 }
 
 .navBar .enabledLink {
@@ -107,7 +107,7 @@ body, div, ul, li, button, a, p, h1, h2, h3, h4, h5, h6, li {
 
 .navBar .navBarBurgerMenuIcon button {
     font-size: 1rem;
-    color: white;
+    color: black;
     border: none;
     cursor: pointer;
     outline: none;
@@ -116,7 +116,7 @@ body, div, ul, li, button, a, p, h1, h2, h3, h4, h5, h6, li {
 }
 
 .navBarLink {
-    color: whitesmoke;
+    color: black;
     font-size: 20px;
     opacity: 0.6;
 }
@@ -124,7 +124,12 @@ body, div, ul, li, button, a, p, h1, h2, h3, h4, h5, h6, li {
 .navBarLinkActive {
     opacity: 1;
 }
-
+ .content::-webkit-scrollbar {
+  display: none;
+}
+.content {
+  -ms-overflow-style: none;
+}
 .navBarLink:hover {
     opacity: 1;
     color: #ed1212;
@@ -143,6 +148,16 @@ body, div, ul, li, button, a, p, h1, h2, h3, h4, h5, h6, li {
         display: none;
     }
     .content {
-        max-width: 90%;
+        max-width: 100%;
+        
     }
+    .content::-webkit-scrollbar {
+  display: none;
 }
+.content {
+  -ms-overflow-style: none;
+}
+}
+
+/* Hide scrollbar for IE and Edge */
+
